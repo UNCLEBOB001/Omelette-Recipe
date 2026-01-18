@@ -1,0 +1,129 @@
+/* Reset / base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: #f3e8e3;
+  color: #333;
+}
+
+/* Main card */
+.omelette-recipe {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+/* Image */
+.omelette-recipe img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #7b3f2c;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Preparation section */
+.preparation {
+  background-color: #f9f1f6;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.prep-time {
+  padding-left: 1.2rem;
+}
+
+.prep-time li {
+  margin-bottom: 0.5rem;
+}
+
+.prep-time li::marker {
+  color: #7b3f2c;
+}
+
+/* Ingredients */
+.ingredients-list {
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.ingredients-list li {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-list li::marker {
+  color: #7b3f2c;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* Instructions */
+.instruction-list {
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.instruction-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.instruction-list li::marker {
+  color: #7b3f2c;
+  font-weight: bold;
+}
+
+/* Nutrition table */
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.nutrition-table td {
+  padding: 0.75rem 0;
+}
+
+.nutrition-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #7b3f2c;
+}
