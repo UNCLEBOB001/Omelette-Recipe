@@ -1,25 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;600;700&display=swap");
+
 /* Reset / base */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 2rem 1rem;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
-  background-color: #f3e8e3;
-  color: #333;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
 }
 
 /* Main card */
 .omelette-recipe {
   max-width: 650px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   padding: 2rem;
   border-radius: 16px;
 }
@@ -37,12 +38,13 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: "Young Serif", serif;
 }
 
 h2 {
   font-size: 1.3rem;
   margin-bottom: 0.75rem;
-  color: #7b3f2c;
+  color: hsl(14, 45%, 36%);
 }
 
 /* Paragraphs */
@@ -53,10 +55,14 @@ p {
 
 /* Preparation section */
 .preparation {
-  background-color: #f9f1f6;
+  background-color: hsl(330, 100%, 98%);
   padding: 1.25rem;
   border-radius: 12px;
   margin-bottom: 2rem;
+}
+
+.preparation > h2 {
+  color: hsl(332, 51%, 32%);
 }
 
 .prep-time {
@@ -68,7 +74,7 @@ p {
 }
 
 .prep-time li::marker {
-  color: #7b3f2c;
+  color: hsl(14, 45%, 36%);
 }
 
 /* Ingredients */
@@ -82,13 +88,13 @@ p {
 }
 
 .ingredients-list li::marker {
-  color: #7b3f2c;
+  color: hsl(14, 45%, 36%);
 }
 
 /* Horizontal rules */
 hr {
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid hsl(30, 18%, 87%);
   margin: 2rem 0;
 }
 
@@ -104,7 +110,7 @@ hr {
 }
 
 .instruction-list li::marker {
-  color: #7b3f2c;
+  color: hsl(14, 45%, 36%);
   font-weight: bold;
 }
 
@@ -115,7 +121,7 @@ hr {
 }
 
 .nutrition-table tr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 .nutrition-table td {
@@ -125,5 +131,15 @@ hr {
 .nutrition-table td:last-child {
   text-align: right;
   font-weight: 600;
-  color: #7b3f2c;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
 }
